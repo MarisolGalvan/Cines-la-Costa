@@ -4,47 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-<!-- ESTA ES LA BARRA DE NAVEGACION -->
-<header>
-    <a href="../index.html" id="logo">
-        <img src="../multimedia/logo.png" alt="logo">
-    </a>
-    <nav>
-        <ul>
-            <li>
-                <a href="../pages/proximosestrenos.html" class="pestañas">Próximos estrenos</a>   
-            </li>
-            <li>
-                <a href="../pages/misentradas.html" class="pestañas">Mis entradas</a>
-            </li>
-            <li>
-                <a href="../pages/peliculas.html" class="pestañas">Películas</a>
-            </li>
-        </ul>
-<!-- iconos top bar -->
-<a href="../pages/login.html" class="iconoheader">
-    <img src="../multimedia/perfil icon.png"></a>
-    
-    <img src="../multimedia/ayuda icon.png" id="iconohelp">
-        </nav>
-</header>
 
-    <main class="mainlogin">
-        <form action="/submit" method="post">
-            <!-- Input de nombre de usuario -->
-            <label for="nombredeusuario" class="labelusuario">Nombre de usuario o correo electronico</label>
-            <input type="email" name="usuario" id="nombredeusuario" placeholder="Usuario">
-            <br>
-            <!-- Input de password -->
-            <label for="password" class="labelcontraseña">Contraseña</label>
-            <input type="password" name="contraseña" id="password" placeholder="Contraseña">
-            <br>
-            <button type="submit" class="botoningresar">Ingresar</button>
-            <a href="" class="olvidemiclave">Olvidé mi contraseña</a>
-        </form>
-    </main>
+<!-- NAVBAR BOOTSTRAP -->
+<nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../multimedia/logo.png" alt="logo" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="../pages/proximosestrenos.html">Próximos estrenos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/misentradas.html">Mis entradas</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/peliculas.html">Películas</a></li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <a href="../pages/login.html" class="me-3"><img src="../multimedia/perfil icon.png" alt="perfil" class="header-icon"></a>
+                <img src="../multimedia/ayuda icon.png" alt="ayuda" class="header-icon">
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card login-card">
+                <div class="card-body p-4 p-md-5">
+                    <h2 class="text-center mb-4">Iniciar Sesión</h2>
+                    
+                    <form action="/submit" method="post">
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Email o nombre de usuario</label>
+                            <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+                        </div>
+                        
+                        <div class="d-grid gap-2 mb-3">
+                            <button type="submit" class="btn btn-success btn-lg">Ingresar</button>
+                        </div>
+                        
+                        <div class="text-center">
+                            <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        
+                        <hr class="my-4">
+                        
+                        <div class="text-center">
+                            <p class="mb-0">¿No tienes una cuenta?</p>
+                            <a href="#" class="btn btn-outline-light mt-2">Crear cuenta</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-2">Derechos reservados</p>
+    <div>
+        <img src="../multimedia/icono ig.png" alt="instagram" class="me-2 footer-icon">
+        <img src="../multimedia/logo wsp.png" alt="whatsapp" class="footer-icon">
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

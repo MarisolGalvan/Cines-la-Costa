@@ -1,396 +1,354 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
 
-body{
-    margin: 0px;
-}
-
-body{
-    font-family: Readex Pro;
+body {
+    font-family: 'Readex Pro', sans-serif;
     font-size: 16px;
     color: #F6F6F6;
     background-color: #000045;
-    height: 1000px;
 }
 
-header{
+/* Navbar customization */
+.navbar {
     background-color: #00005c;
-    margin: 0px;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 1920px;
-    height: 80px;
-    z-index: 10;
+    padding: 0.5rem 0;
 }
 
-ul{
-    list-style: none;
-    position: absolute;
-    left: 450px;
-    top: 40px;
-    margin: 0px;
+.navbar-brand {
+    padding: 0;
 }
 
-li{
-    display: inline;
-    margin: 100px;
+.logo-img {
+    height: 30px;
+    width: auto;
 }
 
-
-
-#logo{
-position: absolute;
-left: 60px;
-top: 30px;
+.header-icon {
+    height: 24px;
+    width: auto;
 }
 
-.iconoheader{
-    position: absolute;
-    right: 200px;
-    top: 30px;
+.navbar-nav {
+    gap: 2rem;
 }
 
-#iconohelp{
-    position: absolute;
-    right: 130px;
-    top: 30px;
+.nav-link {
+    color: #F6F6F6 !important;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
 }
 
-#tituloportada{
-    position: absolute;
-    top: 150px;
-    left: 60px;
+.nav-link:hover {
+    color: #75E075 !important;
 }
 
-
-#parrafoportada{
-    position: absolute;
-    top: 230px;
-    left: 60px;
+/* Header section */
+header {
+    background-color: #00005c;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
 }
 
-#botontrailer{
-    position: absolute;
-    top: 330px;
-    left: 60px;
-}
-
-#botonentradas{
-    position: absolute;
-    top: 330px;
-    left: 220px;
-}
-#botonentradas:hover{
-    background-color:#76b876;
-}
-#botontrailer:hover{
-    border:#F6F6F6;
-    border-style: solid;
-}
-
-.inputpelicula{
-    position: relative;
-    left: 60px;
-    top: 30px;
-    margin: 10px;
-}
-#inputselect{
-    color: #F6F6F6;
-    background-color: #000045;
-    border-color: #F6F6F6;
-    border-radius: 10px;
-    height: 36px;
-    width: 290px;
-    position: relative;
-    top: 30px;
-}
-
-.inputpelicula2{
-    position: relative;
-    left: 60px;
-    top: 30px;
-    margin: 10px;
-}
-
-#inputselect2{
-    color: #F6F6F6;
-    background-color: #000045; 
-    border-radius: 10px;
-    border-color: #F6F6F6;
-    height: 36px;
-    width: 290px;
-}
-
-.inputpelicula3{
-    position: relative;
-    left: 60px;
-    top: 30px;
-    margin: 10px;
-}
-
-#inputselect3{
-    color: #F6F6F6;
-    background-color: #000045;
-    border-radius: 10px;
-    border-color: #F6F6F6;
-    height: 36px;
-    width: 290px;
-}
-
-input{
-    border-radius: 10px;
-    height: 25px;
-    width: 100px;
-}
-
-#tituloportada{
-    font-size: 32px;
-    font-weight: 400;
-}
-
-#parrafoportada{
-    font-size: 16px;
-    font-weight: 200;
-}
-
-
-#botontrailer{
-    padding: 10px 10px;
-    border-radius: 10px;
-    border-style: solid;
-    border: #000045;
-    background-color: #00004500;
-    font-family: Readex Pro;
-    text-decoration: none;
-    color: #F6F6F6
-}
-
-#botonentradas{
-    border-radius: 10px;
-    padding: 10px 10px;
-    text-decoration: none;
-    color: #F6F6F6;
-    background-color: #75E075;
-    font-family: Readex Pro;
-    font-size: 16px;
+#tituloportada {
+    font-size: 2.5rem;
     font-weight: 700;
-}
-#botonbuscar{
-    position: absolute;
-    right: 400px;
-    top: 590px;
-    font-family: Readex Pro;
-    border-style: none;
-    color: #000045;
-    background-color: #F6F6F6
-}
-.titulospeliculas{
-    color: #F6F6F6;
-    text-decoration: none;
-
-}
-.pestañas{
-    color: #F6F6F6;
-    text-decoration: none;
-}
-.opcionvolver{
-    color: #F6F6F6;
-    text-decoration: none;
+    margin-bottom: 1.5rem;
 }
 
-.seccionpelis{
-    height: 700px;
-    /* background-color: antiquewhite; */
-    /* border-color: black; */
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
+#parrafoportada {
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto 2rem;
 }
 
-.peliculas{
-    border: 4px solid #000045;
-    width: 350px;
-    height: 500px;
-    position: relative;
-    top: 80px
-}
-
-.images{
-    position: relative;
-    left: 40px;
-    top: 10px;
-    align-content: center;
-}
-
-.titulopelicula{
-    color: #F6F6F6;
-    position: relative;
-    top: 420px;
-    text-decoration: none;
-}
-
-.vistaprevia{
-    width: 90vw;
-    position: absolute;
-    top: 250px;
-    left: 80px;
-}
-
-.sectionfooter{
-    background-color: #000013;
-    position: static;
-    height: 80vh;
-}
-
-.contenidofooter{
-    position: relative;
-    top: 100px;
-}
-
-#subtitulocartelera{
-    position: absolute;
-    top: 630px;
-    left: 900px;
-}
-
-.seccionentradas{
-    position: absolute;
-    top: 900px;
-    left: 80px;
-}
-
-.vistaprevia{
-    display: flex;
-    gap: 40px;
-}
-
-.footertrailer{
-position: absolute;
-top: 1200px;
-background-color: #000013;
-width: 100vw;
-height: 100vh;
-}
-
-.opcionvolver{
-    position: absolute;
-    top: 180px;
-    left: 100px;
-}
-
-.todaslaspelis{
-    position: absolute;
-    left: 290px;
-    top: 250px;
-    width: 70vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 8px;
-    justify-content: center;
-}
-
-.footerpelis{
-    background-color: #000013;
-    position: absolute;
-    bottom: 0px;
-    width: 100vw;
-    height: 200px;
-}
-
-.subtitulopelis{
-    position: absolute;
-    left: 40%;
-    top: 150px;
-}
-
-.entradas{
-    background-color:#F6F6F6;
-    color: #000045;
-    position: absolute;
-    top: 150px;
-    left: 30px;
+#imagendeflow {
+    max-height: 500px;
+    object-fit: cover;
     border-radius: 10px;
-    font-size: 16px;
-    width: 1000px;
-    height: 130px;
-    padding: 20px;
-
+    margin-bottom: 2rem;
 }
 
-.vermas{
-    position: absolute;
-    left: 1100px;
-    top: 250px;
-    text-decoration: none;
+/* Buttons */
+#botontrailer {
+    background-color: transparent;
+    border: 2px solid #F6F6F6;
     color: #F6F6F6;
-}
-.estado{
-    color:#75E075;
-}
-
-.footerentradas{
-    background-color: #000013;
-    position: relative;
-    top: 1000px;
-    height: 300px;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-.mainlogin{
-    height: 600px;
-    width: 1000px;
-    border-radius: 20px;
-    background-color:#F6F6F6;
+#botontrailer:hover {
+    background-color: #F6F6F6;
     color: #000045;
-    position: absolute;
-    top: 200px;
-    left: 450px;
-    padding: 20px;
 }
 
-#nombredeusuario{
-    position: relative;
-    top: 150px;
-    left: 40px;
-    width: 200px;
-    border-style: solid;
-    border-color:darkgrey
-}
-.labelusuario{
-    position: relative;
-    top: 100px;
-    left: 340px;
-}
-.labelcontraseña{
-    position: relative;
-    top: 200px;
-    left: 340px;
-}
-#password{
-    position: relative;
-    top: 250px;
-    left: 260px;
-    width: 200px;
-    border-style: solid;
-    border-color:darkgrey
-}
-.botoningresar{
-    position: relative;
-    top: 300px;
-    left: 400px;
-    color:#F6F6F6;
-    background-color:#00005c;
-    height: 40px;
-    width: 150px;
+#botonentradas {
+    background-color: #75E075;
     border: none;
-    border-radius: 10px;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
-.olvidemiclave{
-    color: darkgray;
-    position: relative;
-    top: 400px;
-    left: 230px;
+
+#botonentradas:hover {
+    background-color: #76b876;
+}
+
+/* Search form */
+.form-select {
+    background-color: #000045;
+    color: #F6F6F6;
+    border-color: #F6F6F6;
+    border-radius: 10px;
+    padding: 0.75rem;
+}
+
+.form-select:focus {
+    background-color: #000045;
+    color: #F6F6F6;
+    border-color: #75E075;
+    box-shadow: 0 0 0 0.25rem rgba(117, 224, 117, 0.25);
+}
+
+.form-label {
+    color: #F6F6F6;
+    margin-bottom: 0.5rem;
+}
+
+#botonbuscar {
+    background-color: #F6F6F6;
+    color: #000045;
+    border: none;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+}
+
+#botonbuscar:hover {
+    background-color: #75E075;
+    color: #F6F6F6;
+}
+
+/* Movie cards */
+.titulopelicula {
+    color: #F6F6F6;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 1rem 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.titulopelicula:hover {
+    color: #75E075;
+}
+
+.row img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.row img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #000013;
+    margin-top: 3rem;
+}
+
+footer img {
+    transition: transform 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+/* Trailer page styles */
+.ratio-16x9 {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 92, 0.5) !important;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: #75E075;
+    font-weight: 600;
+}
+
+.btn-outline-light {
+    border-width: 2px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #75E075;
+    border-color: #75E075;
+}
+
+.btn-success {
+    background-color: #75E075;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #76b876;
+}
+
+.footer-icon {
+    height: 24px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #tituloportada {
+        font-size: 1.8rem;
+    }
+    
+    #parrafoportada {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    #botontrailer,
+    #botonentradas {
+        padding: 0.5rem 1.5rem;
+        margin: 0.5rem;
+    }
+    
+    .navbar-nav {
+        gap: 0.5rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    
+    .header-icon {
+        height: 20px;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #tituloportada {
+        font-size: 1.5rem;
+    }
+    
+    .form-select {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Login page styles */
+.login-card {
+    background-color: rgba(0, 0, 92, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.login-card .card-body {
+    padding: 2rem;
+}
+
+.login-card h2 {
+    color: #F6F6F6;
+    font-weight: 600;
+}
+
+.form-label {
+    color: #F6F6F6;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #F6F6F6;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: #75E075;
+    color: #F6F6F6;
+    box-shadow: 0 0 0 0.25rem rgba(117, 224, 117, 0.25);
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.forgot-password {
+    color: #75E075;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #76b876;
+    text-decoration: underline;
+}
+
+.btn-success {
+    background-color: #75E075;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #76b876;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .login-card .card-body {
+        padding: 1.5rem;
+    }
+    
+    .btn-success {
+        padding: 0.5rem 1rem;
+    }
 }
