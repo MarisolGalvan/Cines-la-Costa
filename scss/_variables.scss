@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content
+    }
+}
+
+body {
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 16px;
+    color: #F6F6F6;
+    background-color: #000045;
+}
